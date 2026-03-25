@@ -83,5 +83,7 @@ pat = Patient()
 pat.display_patient()
 ## Sample Output
 <img width="368" height="779" alt="image" src="https://github.com/user-attachments/assets/bf10fc2c-c6b3-4e5c-9f16-a527bd31fa22" />
+
+
 **RESULT**
 Thus,the program was implemented and executed successfully,and the required output was obtained.
