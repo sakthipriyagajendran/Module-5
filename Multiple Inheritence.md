@@ -24,6 +24,53 @@ To write a Python program to calculate **Add, Sub & Division** using **Multiple 
    - Display the results of the three operations.
 
 ## 💻 Program 
-Add code here
+# Parent class 1
+class Add:
+    
+    def get_values(self):
+        self.a = float(input("Enter first number: "))
+        self.b = float(input("Enter second number: "))
+    
+    def addition(self):
+        print("Addition:", self.a + self.b)
+
+
+# Parent class 2
+class Subtract:
+    
+    def subtraction(self):
+        print("Subtraction:", self.a - self.b)
+
+
+# Parent class 3
+class Division:
+    
+    def division(self):
+        if self.b != 0:
+            print("Division:", self.a / self.b)
+        else:
+            print("Division not possible (cannot divide by zero)")
+
+
+# Child class (Multiple Inheritance)
+class Calculator(Add, Subtract, Division):
+    
+    def display(self):
+        self.get_values()
+        print("\n--- Results ---")
+        self.addition()
+        self.subtraction()
+        self.division()
+
+
+# Creating object
+calc = Calculator()
+
+# Calling method
+calc.display()
 ## Output Example
 
+<img width="379" height="362" alt="image" src="https://github.com/user-attachments/assets/03061540-ac6c-4b84-a627-194913e36b5a" />
+
+**RESULT:**
+Thus,the program was implemented and executed successfully,and the required output was obtained.
